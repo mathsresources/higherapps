@@ -79,6 +79,7 @@
 \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
 \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -199,6 +200,9 @@
 \usepackage[no-math]{fontspec}
 \usepackage{lmodern}
 \renewcommand{\familydefault}{lmss}
+
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
 \AtBeginDocument{\frontmatter}
 \usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
@@ -265,9 +269,124 @@ As you work, you may start a local server to live preview this HTML book. This p
 
 \chapter{Mathematical modelling}\label{mathematical-modelling}
 
-\newpage
+\vspace{-1cm}
+
+Maths is used to make sense of the world around us, and help us to make decisions, in our personal lives and in the worlds of business, politics, science, and so on. This could involve, for example:
+
+\begin{itemize}
+    \item Creating and solving equations.
+    \item Plotting graphs.
+    \item Making calculations.
+    \item Using computer software.
+\end{itemize}
+
+Each of these things could be thought of as creating a \textbf{mathematical model}. This chapter will introduce and explore a range of different kinds of model that may be useful, and when they may be encountered in the real world.
+
+\begin{center}
+    \begin{tcolorbox}[center,colback=DarkOrchid!5,colframe=DarkOrchid,width=10cm]
+        \centering
+        \textit{``All models are wrong, but some are useful.''}\\[0.2em]
+        George Box, Statistician
+    \end{tcolorbox}
+\end{center}
+
+The above quote highlights that mathematical models don't always need to be able to produce `the \emph{right} answer', and in many situations such a thing is not even possible. Instead, the goal is often a simply a \emph{useful} answer. Since we are entering a world of often \emph{not knowing the true answer}, it is helpful to be learn some related vocabulary:
+
+\begin{itemize}
+    \item \textbf{Accuracy} relates to how much a measurement or process leads towards the \textit{true value}.
+    \item \textbf{Precision} relates to how close repeated measurements or processes are to \textit{each other}.
+\end{itemize}
+
+The results of four different archers aiming for the centre of a target should help illustrate the difference:
+
+\begin{center}  
+    \begin{tikzpicture}
+        \draw[thick,fill=Cyan] (-7.5,0) circle (1.5cm);
+        \draw[thick,fill=WildStrawberry] (-7.5,0) circle (1cm);
+        \draw[thick,fill=Goldenrod] (-7.5,0) circle (0.5cm);
+        \draw[thick,fill=Cyan] (-2.5,0) circle (1.5cm);
+        \draw[thick,fill=WildStrawberry] (-2.5,0) circle (1cm);
+        \draw[thick,fill=Goldenrod] (-2.5,0) circle (0.5cm);
+        \draw[thick,fill=Cyan] (2.5,0) circle (1.5cm);
+        \draw[thick,fill=WildStrawberry] (2.5,0) circle (1cm);
+        \draw[thick,fill=Goldenrod] (2.5,0) circle (0.5cm);
+        \draw[thick,fill=Cyan] (7.5,0) circle (1.5cm);
+        \draw[thick,fill=WildStrawberry] (7.5,0) circle (1cm);
+        \draw[thick,fill=Goldenrod] (7.5,0) circle (0.5cm);
+        \node[left] at (-6.5,-2) {Accurate\;\textcolor{Green}{\cmark}};
+        \node[left] at (-6.5,-2.7) {Precise\;\textcolor{Green}{\cmark}};
+        \node[left] at (-1.5,-2) {Accurate\;\textcolor{Red}{\xmark}};
+        \node[left] at (-1.5,-2.7) {Precise\;\textcolor{Green}{\cmark}};
+        \node[left] at (3.5,-2) {Accurate\;\textcolor{Green}{\cmark}};
+        \node[left] at (3.5,-2.7) {Precise\;\textcolor{Red}{\xmark}};
+        \node[left] at (8.5,-2) {Accurate\;\textcolor{Red}{\xmark}};
+        \node[left] at (8.5,-2.7) {Precise\;\textcolor{Red}{\xmark}};
+        \draw[fill=black] (-7.4,0.2) circle (0.05);
+        \draw[fill=black] (-7.7,-0.1) circle (0.05);
+        \draw[fill=black] (-7.6,0.1) circle (0.05);
+        \draw[fill=black] (-7.5,-0.3) circle (0.05);
+        \draw[fill=black] (-7.4,0) circle (0.05);
+        \draw[fill=black] (-1.1,-1.2) circle (0.05);
+        \draw[fill=black] (-1.2,-1.0) circle (0.05);
+        \draw[fill=black] (-1.3,-0.7) circle (0.05);
+        \draw[fill=black] (-1.4,-0.9) circle (0.05);
+        \draw[fill=black] (-1.5,-1.3) circle (0.05);
+        \draw[fill=black] (3.6,0.3) circle (0.05);
+        \draw[fill=black] (2.3,0.2) circle (0.05);
+        \draw[fill=black] (1.8,-0.7) circle (0.05);
+        \draw[fill=black] (3.1,-0.3) circle (0.05);
+        \draw[fill=black] (2.0,0.6) circle (0.05);
+        \draw[fill=black] (8.9,1.5) circle (0.05);
+        \draw[fill=black] (9.0,1.1) circle (0.05);
+        \draw[fill=black] (6.7,1.5) circle (0.05);
+        \draw[fill=black] (8.1,0.6) circle (0.05);
+        \draw[fill=black] (8.9,0.1) circle (0.05);
+    \end{tikzpicture}
+\end{center}
+
+\pagebreak
 
 \section{Systematic Estimation}\label{systematic-estimation}
+
+The 20th century physicist Enrico Fermi was known for performing `back of an envelope' calculations which often gave surprisingly reliable results. Calculations of this type are therefore sometimes called \textit{`Fermi estimates'}. The goal of these \emph{systematic estimates} is to quickly get a sense of the \emph{scale} of numerical answers to complex or even impossible questions such as:
+
+\begin{center}
+    \begin{tcolorbox}[center,colback=Aquamarine!5,colframe=Aquamarine,width=16cm]
+        \begin{itemize}
+            \item \textit{How many times might a teacher take a class register in their career?}
+            \item \textit{How much on average does a large supermarket spend on staff wages each week?}
+            \item \textit{How many miles are driven by cars on Scottish roads in a month?}
+        \end{itemize}
+    \end{tcolorbox}
+\end{center}
+
+These calculations might involve using a mixture of \emph{approximated}, \emph{estimated} and \emph{exact} numbers. For example:
+
+\begin{itemize}
+    \item There are \textbf{exactly} 60 seconds in one minute.
+    \item There are \textbf{approximately} 30 days on average in a month.
+    \item We might \textbf{estimate} the mass of a typical family car to be 1000 kilograms.
+\end{itemize}
+
+It would be unlikely that we could come up with \emph{precise} answers using these calculations, but we can aim for \emph{accuracy}. To communicate the main source of any possible lack of accuracy in any such calculation, it is important to state clearly that the answer is based on \textbf{assumptions} about the accuracy of any \emph{estimates} made.
+
+\begin{tcolorbox}[title=Example 1.1A,colback=RoyalBlue!1!,colframe=NavyBlue]
+\textbf{Problem:} A question...
+\tcblower
+\textbf{Solution:} A solution...
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Example 1.1B,colback=RoyalBlue!1!,colframe=NavyBlue]
+\textbf{Problem:} A question...
+\tcblower
+\textbf{Solution:} A solution...
+
+\end{tcolorbox}
+
+\emph{Now try:} \textbf{Zeta Higher Apps, Exercise 1.1}
+
+\newpage
 
 \bibliography{book.bib,packages.bib}
 
