@@ -202,6 +202,10 @@
 
 \newcommand{\cmark}{\ding{51}}%
 \newcommand{\xmark}{\ding{55}}%
+
+
+\usetikzlibrary{fadings}
+\tikzfading[name=fade out, inner color=transparent!0, outer color=transparent!100]
 \AtBeginDocument{\frontmatter}
 \usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
@@ -272,7 +276,7 @@ As you work, you may start a local server to live preview this HTML book. This p
 
 Maths is used to make sense of the world around us, and help us to make decisions, in our personal lives and in the worlds of business, politics, science, and so on. This could involve, for example:
 
-\begin{itemize}
+\begin{itemize}[leftmargin=2.3cm]
     \item Creating and solving equations.
     \item Plotting graphs.
     \item Making calculations.
@@ -291,7 +295,7 @@ Each of these things could be thought of as creating a \textbf{mathematical mode
 
 The above quote highlights that mathematical models don't always need to be able to produce `the \emph{right} answer', and in many situations such a thing is not even possible. Instead, the goal is often a simply a \emph{useful} answer. Since we are entering a world of often \emph{not knowing the true answer}, it is helpful to be learn some related vocabulary:
 
-\begin{itemize}
+\begin{itemize}[leftmargin=2.3cm]
     \item \textbf{Accuracy} relates to how much a measurement or process leads towards the \textit{true value}.
     \item \textbf{Precision} relates to how close repeated measurements or processes are to \textit{each other}.
 \end{itemize}
@@ -347,7 +351,7 @@ The results of four different archers aiming for the centre of a target should h
 
 \section{Systematic Estimation}\label{systematic-estimation}
 
-The 20th century physicist Enrico Fermi was known for performing `back of an envelope' calculations which often gave surprisingly reliable results. Calculations of this type are therefore sometimes called \textit{`Fermi estimates'}. The goal of these \emph{systematic estimates} is to quickly get a sense of the \emph{scale} of numerical answers to complex or even impossible questions such as:
+The 20th century physicist Enrico Fermi was known for performing `back of an envelope' calculations which often gave surprisingly reliable and \emph{accurate} results. Calculations of this type are therefore sometimes called \textit{`Fermi estimates'}. The goal of these \emph{systematic estimates} is to quickly get a sense of the \emph{scale} of numerical answers to complex or even impossible questions such as:
 
 \begin{center}
     \begin{tcolorbox}[title=Questions,center,colback=Aquamarine!5,colframe=Aquamarine,width=16cm]
@@ -361,31 +365,185 @@ The 20th century physicist Enrico Fermi was known for performing `back of an env
 
 These calculations might involve using a mixture of \emph{approximated}, \emph{estimated} and \emph{exact} numbers. For example:
 
-\begin{itemize}
+\begin{itemize}[leftmargin=2.3cm]
     \item There are \textbf{exactly} 60 seconds in one minute.
     \item There are \textbf{approximately} 30 days on average in a month.
     \item We might \textbf{estimate} the mass of a typical family car to be 1000 kilograms.
 \end{itemize}
 
-It would be unlikely that we could come up with \emph{precise} answers using these calculations, but we can aim for \emph{accuracy}. To communicate the main source of any possible lack of accuracy in any such calculation, it is important to state clearly that the answer is based on \textbf{assumptions} about the accuracy of any \emph{estimates} made.
+It is important to communicate clearly any \textbf{assumptions} made in reaching your answer, such as the \emph{estimation} above.
 
 \begin{tcolorbox}[title=Example 1.1A,colback=RoyalBlue!1!,colframe=NavyBlue]
-\textbf{Problem:} A question...
+\textbf{Problem:}\\[0.1em] 
+A secondary school in a city centre in Scotland has approximately 800 pupils.\\ Estimate the total amount spent on lunches in the school's dining hall per month.
+
 \tcblower
-\textbf{Solution:} A solution...
+\textbf{Solution:}\\[0.1em] 
+Assume that:\\[0.1em]
+\begin{itemize}[itemsep=0pt]
+    \item Half of the pupils in the school buy their lunch from the dining hall.
+    \item On average £4 is spent on lunch each day by those pupils.
+\end{itemize}
+
+\[\text{400}\times \text{4} \times \text{20}=\text{32000}\approx \text{£30,000}\]
 
 \end{tcolorbox}
+
+You may have may have estimated a different proportion of pupils that use the dining hall, and a different average spend. It is expected your final answer will vary based on your estimates of the different \emph{variables}.
 
 \begin{tcolorbox}[title=Example 1.1B,colback=RoyalBlue!1!,colframe=NavyBlue]
-\textbf{Problem:} A question...
+\textbf{Problem:}\\[0.1em] 
+Estimate the total volume of water that a typical person drinks during their childhood.
+
 \tcblower
-\textbf{Solution:} A solution...
+\textbf{Solution:}\\[0.1em]  
+Assume that:\\[0.1em]
+\begin{itemize}[itemsep=0pt]
+    \item `Childhood' lasts 18 years (from 0 to 18).
+    \item On average a child might drink 1 litre of water a day.
+\end{itemize}
+
+\[\text{1}\times \text{365} \times \text{18}=\text{6570}\approx \text{6600 litres}\]
 
 \end{tcolorbox}
 
-\emph{Now try:} \textbf{Zeta Higher Apps, Exercise 1.1}
+\pagebreak
 
-\newpage
+\section{Modelling Relationships}\label{modelling-relationships}
+
+We may wish to explore the \emph{relationships} between two or more variables, such as when considering:
+
+\begin{center}
+    \begin{tcolorbox}[title=Questions,center,colback=Aquamarine!5,colframe=Aquamarine,width=16cm]
+        \begin{itemize}
+            \item How will the \textbf{money} in my savings account grow over \underline{time} if I make regular payments?
+            \item What might a car's \textbf{braking distance} by when travelling at different \underline{speeds}?
+            \item How might the \underline{distance} travelled in a taxi be related to the \textbf{fare}?
+        \end{itemize}
+    \end{tcolorbox}
+\end{center}
+
+We should aim to identify where possible for any relationship:
+
+\begin{itemize}[leftmargin=2.3cm]
+    \item The \underline{independent} variable - commonly either \textit{time} or one which we \underline{control}.
+    \item The \textbf{depdendent} variable - which changes in \textbf{response} to the other.
+\end{itemize}
+
+Initially a consideration of a possible relationship should be \emph{descriptive}, thinking about when the dependent variable might be increasing slowly, increasing more quickly, decreasing, at zero or other specific values. \emph{Graphs} can help:
+
+\begin{tcolorbox}[title=Example 1.2,colback=RoyalBlue!1!,colframe=NavyBlue]
+
+\textbf{Problem:}\\[0.1em] 
+Bob pours coffee into an empty 200ml capacity coffee cup at a constant rate.\\ The interior of the coffee cup is in the shape of a hemisphere, as shown below.
+\begin{multicols}{2}
+\begin{center}
+\begin{tikzpicture}[scale=1.2]
+
+\tikzset{xshift={mod(1,2)*3cm}, yshift=-floor(1/2)*3cm}
+\colorlet{cup}{MidnightBlue!75!black}
+
+% Saucer
+\begin{scope}[shift={(0,-1-1/16)}]
+    \fill [black!87.5, path fading=fade out] 
+      (0,-2/8) ellipse [x radius=6/4, y radius=3/4];
+    \fill [cup, postaction={left color=black, right color=white, opacity=1/3}] 
+      (0,0) ++(180:5/4) arc (180:360:5/4 and 5/8+1/16);
+    \fill [cup, postaction={left color=black!50, right color=white, opacity=1/3}] 
+      (0,0) ellipse [x radius=5/4, y radius=5/8];
+    \fill [cup, postaction={left color=white, right color=black, opacity=1/3}]
+      (0,1/16) ellipse [x radius=5/4/2, y radius=5/8/2];
+    \fill [cup, postaction={left color=black, right color=white, opacity=1/3}] 
+      (0,0) ellipse [x radius=5/4/2-1/16, y radius=5/8/2-1/16];
+\end{scope} 
+
+% Handle
+\begin{scope}[shift=(10:7/8), rotate=-30, yslant=1/2, xslant=-1/8]
+  \fill [cup, postaction={top color=black, bottom color=white, opacity=1/3}] 
+    (0,0) arc (130:-100:3/8 and 1/2) -- ++(0,1/4) arc (-100:130:1/8 and 1/4) -- cycle;
+  \fill [cup, postaction={top color=white, bottom color=black, opacity=1/3}] 
+    (0,0) arc (130:-100:3/8 and 1/2) -- ++(0,1/32) arc (-100:130:1/4 and 1/3) -- cycle;
+\end{scope}
+
+% Cup
+\fill [cup!25!black, path fading=fade out] 
+    (0,-1-1/16) ellipse [x radius=3/4, y radius=1/3];
+\fill [cup, postaction={left color=black, right color=white, opacity=1/3/2},
+  postaction={bottom color=black, top color=white, opacity=1/3/2}] 
+    (-1,0) arc (180:360:1 and 5/4);
+\fill [cup, postaction={left color=white, right color=black, opacity=1/3}] 
+  (0,0) ellipse [x radius=1, y radius=1/2];
+\fill [cup, postaction={left color=black, right color=white, opacity=1/3/2},
+  postaction={bottom color=black, top color=white, opacity=1/3/2}] 
+    (0,0) ellipse [x radius=1-1/16, y radius=1/2-1/16];
+
+% Coffee
+\begin{scope}
+\clip ellipse [x radius=1-1/16, y radius=1/2-1/16];
+\fill [brown!25!black] 
+  (0,-1/4) ellipse [x radius=3/4, y radius=3/8];
+\fill [brown!50!black, path fading=fade out] 
+  (0,-1/4) ellipse [x radius=3/4, y radius=3/8];
+\end{scope}
+
+\end{tikzpicture}
+\end{center}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    % Draw a shaded ball, but clip so only the lower half shows.
+    % The arc in the clipping region is the foreground part of the equator
+    \begin{scope}
+        \clip(-3,-3) -- (-3,0) -- (-2,0) arc (180:360:2cm and 0.6cm) -- (3,0) -- (3,-3) -- (-3,-3);
+        \shade[ball color=MidnightBlue!60!white, opacity=0.70] (0,0) circle (2cm);
+    \end{scope}
+
+    % Draw the disc on top of the hemisphere.
+    \shade[shading=radial, inner color=MidnightBlue!40!white, outer color=MidnightBlue!60!white, opacity=0.70] (2,0) arc (0:360:2cm and 0.6cm); 
+    
+    % Outline the disk in black
+    \draw (2,0) arc (0:360:2cm and 0.6cm);
+
+    % Outline the hemisphere in black
+    \draw (-2,0) arc (180:360:2cm and 2cm);
+    \draw[stealth-stealth] (3.4,-2) -- (3.4,0);
+    \node[right] at (3.4,-1) {depth};
+\end{tikzpicture}
+\end{center}
+
+
+\end{multicols}
+
+State which of graphs A, B or C below might be used to model the relationship between the time since Bob began pouring the coffee and the depth of coffee in the cup, explaining your answer.
+
+\begin{multicols}{3}
+
+\begin{tikzpicture}
+    \node[above] at (2.5,5) {Graph A};
+    \draw (0,0) grid (5,5);
+\end{tikzpicture}
+
+\begin{tikzpicture}
+    \node[above] at (2.5,5) {Graph B};
+    \draw (0,0) grid (5,5);
+\end{tikzpicture}
+
+\begin{tikzpicture}
+    \node[above] at (2.5,5) {Graph C};
+    \draw (0,0) grid (5,5);
+\end{tikzpicture}
+
+\end{multicols}
+
+\tcblower
+\textbf{Solution:}\\[0.1em] 
+Graph ? since \textit{blah blah blah}...
+
+\end{tcolorbox}
+
+\pagebreak
+
+\section{Linear Relationships}\label{linear-relationships}
 
 \bibliography{book.bib,packages.bib}
 

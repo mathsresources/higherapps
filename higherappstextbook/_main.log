@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.4.27)  28 APR 2026 08:56
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.4.28)  28 APR 2026 15:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1523,38 +1523,38 @@ Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 File: bkm-dvipdfm.def 2023-12-10 v1.31 bookmark driver for dvipdfm (HO)
 \BKM@id=\count460
 ))
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 216.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 220.
 (./_main.aux)
 \openout1 = `_main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 216.
-LaTeX Font Info:    ... okay on input line 216.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 216.
-LaTeX Font Info:    ... okay on input line 216.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 216.
-LaTeX Font Info:    ... okay on input line 216.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 216.
-LaTeX Font Info:    ... okay on input line 216.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 216.
-LaTeX Font Info:    ... okay on input line 216.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 216.
-LaTeX Font Info:    ... okay on input line 216.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 216.
-LaTeX Font Info:    ... okay on input line 216.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 216.
-LaTeX Font Info:    ... okay on input line 216.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 216.
-LaTeX Font Info:    ... okay on input line 216.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 216.
-LaTeX Font Info:    ... okay on input line 216.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 220.
+LaTeX Font Info:    ... okay on input line 220.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 220.
+LaTeX Font Info:    ... okay on input line 220.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 220.
+LaTeX Font Info:    ... okay on input line 220.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 220.
+LaTeX Font Info:    ... okay on input line 220.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 220.
+LaTeX Font Info:    ... okay on input line 220.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 220.
+LaTeX Font Info:    ... okay on input line 220.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 220.
+LaTeX Font Info:    ... okay on input line 220.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 220.
+LaTeX Font Info:    ... okay on input line 220.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 220.
+LaTeX Font Info:    ... okay on input line 220.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 220.
+LaTeX Font Info:    ... okay on input line 220.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 216.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 220.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/b/n on input line 216.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/b/n on input line 220.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 216.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 220.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/b/n on input line 216.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/b/n on input line 220.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 1.03015890977869.
@@ -1582,7 +1582,7 @@ Package fontspec Info:
 (fontspec)             <->s*[1.03015890977869]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 11.28015pt on input line 216.
+(Font)              scaled to size 11.28015pt on input line 220.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 1.03015890977869.
@@ -1618,15 +1618,15 @@ Package fontspec Info:
 (fontspec)             <->s*[1.03015890977869]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 11.28015pt on input line 216.
+(Font)              scaled to size 11.28015pt on input line 220.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 216.
+(Font)              `operators' in the math version `normal' on input line 220.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 216.
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 220.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 216.
+(Font)              `operators' in the math version `bold' on input line 220.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 216.
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 220.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 1.03015890977869.
@@ -1692,13 +1692,13 @@ Package fontspec Info:
 (fontspec)             <->s*[1.030261925669668]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 216.
+(Font)              `symbols' in the math version `normal' on input line 220.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 216.
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 220.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 216.
+(Font)              `symbols' in the math version `bold' on input line 220.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 216.
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 220.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 1.03015890977869.
@@ -1758,13 +1758,13 @@ Package fontspec Info:
 (fontspec)             <->s*[1.030055893887712]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 216.
+(Font)              `largesymbols' in the math version `normal' on input line 220.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 216.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 220.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 216.
+(Font)              `largesymbols' in the math version `bold' on input line 220.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 216.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 220.
 
 Package unicode-math Warning: Using \overbracket and \underbracket from
 (unicode-math)                `mathtools' package.
@@ -1823,14 +1823,14 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 216.
-LaTeX Info: Redefining \celsius on input line 216.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 216.
+Package hyperref Info: Link coloring OFF on input line 220.
+LaTeX Info: Redefining \celsius on input line 220.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 220.
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 216.
-Package gensymb Info: Using \upOmega for \ohm on input line 216.
+LaTeX Info: Redefining \ohm on input line 220.
+Package gensymb Info: Using \upOmega for \ohm on input line 220.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -1843,14 +1843,14 @@ File: exsheets_configurations.cfg
 ) (c:/Users/James-A/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 216.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 220.
 Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.18} (current compat level: 1.8).
 
-LaTeX Font Info:    Trying to load font information for TU+pbk on input line 220.
-LaTeX Font Info:    No file TUpbk.fd. on input line 220.
+LaTeX Font Info:    Trying to load font information for TU+pbk on input line 224.
+LaTeX Font Info:    No file TUpbk.fd. on input line 224.
 
 LaTeX Font Warning: Font shape `TU/pbk/b/n' undefined
-(Font)              using `TU/lmr/m/n' instead on input line 220.
+(Font)              using `TU/lmr/m/n' instead on input line 224.
 
 (./_main.toc
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
@@ -1908,9 +1908,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 227.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 231.
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 253.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 257.
 [1
 
 ]
@@ -1918,6 +1918,15 @@ Chapter 1.
 [2
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 381--383
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 399--401
+
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1926,8 +1935,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [3]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[4]
 No file _main.bbl.
-(./_main.aux)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[5] (./_main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
@@ -1937,12 +1961,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 54547 strings out of 470015
- 1296230 string characters out of 5473615
- 1966292 words of memory out of 5000000
- 82407 multiletter control sequences out of 15000+600000
- 642946 words of font info for 97 fonts, out of 8000000 for 9000
+ 54776 strings out of 470015
+ 1301632 string characters out of 5473615
+ 1971798 words of memory out of 5000000
+ 82633 multiletter control sequences out of 15000+600000
+ 642962 words of font info for 99 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 116i,11n,121p,721b,889s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,11n,121p,721b,1220s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on _main.pdf (5 pages).
+Output written on _main.pdf (7 pages).
