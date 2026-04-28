@@ -14,7 +14,7 @@ Maths is used to make sense of the world around us, and help us to make decision
 Each of these things could be thought of as creating a **mathematical model**. This chapter will introduce and explore a range of different kinds of model that may be useful, and when they may be encountered in the real world.
 
 \begin{center}
-    \begin{tcolorbox}[center,colback=DarkOrchid!5,colframe=DarkOrchid,width=10cm]
+    \begin{tcolorbox}[title=Quote,center,colback=DarkOrchid!5,colframe=DarkOrchid,width=10cm]
         \centering
         \textit{``All models are wrong, but some are useful.''}\\[0.2em]
         George Box, Statistician
@@ -82,7 +82,7 @@ The results of four different archers aiming for the centre of a target should h
 The 20th century physicist Enrico Fermi was known for performing 'back of an envelope' calculations which often gave surprisingly reliable results. Calculations of this type are therefore sometimes called \textit{`Fermi estimates'}. The goal of these *systematic estimates* is to quickly get a sense of the *scale* of numerical answers to complex or even impossible questions such as:
 
 \begin{center}
-    \begin{tcolorbox}[center,colback=Aquamarine!5,colframe=Aquamarine,width=16cm]
+    \begin{tcolorbox}[title=Questions,center,colback=Aquamarine!5,colframe=Aquamarine,width=16cm]
         \begin{itemize}
             \item \textit{How many times might a teacher take a class register in their career?}
             \item \textit{How much on average does a large supermarket spend on staff wages each week?}
@@ -102,16 +102,34 @@ These calculations might involve using a mixture of *approximated*, *estimated* 
 It would be unlikely that we could come up with *precise* answers using these calculations, but we can aim for *accuracy*. To communicate the main source of any possible lack of accuracy in any such calculation, it is important to state clearly that the answer is based on **assumptions** about the accuracy of any *estimates* made.
 
 \begin{tcolorbox}[title=Example 1.1A,colback=RoyalBlue!1!,colframe=NavyBlue]
-\textbf{Problem:} A question...
+\textbf{Problem:}\\[0.1em] 
+A secondary school in a city centre in Scotland has approximately 800 pupils.\\ Estimate the total amount spent on lunches in the school's dining hall per month.
+
 \tcblower
-\textbf{Solution:} A solution...
+\textbf{Solution:}\\[0.1em] 
+Assume that:
+\begin{itemize}
+    \item Half of the pupils in the school buy their lunch from the dining hall.
+    \item On average £4 is spent on lunch each day by those pupils.
+\end{itemize}
+
+\[\text{400}\times \text{4} \times \text{20}=\text{32000}\approx \text{£30,000}\]
 
 \end{tcolorbox}
 
+Note that you may have may have estimated a different proportion of pupils that use the dining hall, and a different average spend. It is exptected that estimates will vary, but \textit{essential} that \textit{those assumptions are stated}. Take care with things such as the number of days in a \textit{school week}, which is 5 rather than 7.
+
+
+
 \begin{tcolorbox}[title=Example 1.1B,colback=RoyalBlue!1!,colframe=NavyBlue]
-\textbf{Problem:} A question...
+\textbf{Problem:}\\[0.1em] 
+Estimate the total volume of water that a typical person drinks during their childhood.
+
 \tcblower
-\textbf{Solution:} A solution...
+\textbf{Solution:}\\[0.1em]  
+A solution...
+
+\textbf{Explanation:} An explanation...
 
 \end{tcolorbox}
 
