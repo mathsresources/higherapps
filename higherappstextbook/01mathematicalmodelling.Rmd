@@ -102,12 +102,15 @@ These calculations might involve using a mixture of *approximated*, *estimated* 
 It is important to communicate clearly any **assumptions** made in reaching your answer, such as the *estimation* above.
 
 \begin{tcolorbox}[title=Example 1.1A,colback=RoyalBlue!1!,colframe=NavyBlue]
-\textbf{Problem:}\\[0.1em] 
+\textbf{Problem:}
+
 A secondary school in a city centre in Scotland has approximately 800 pupils.\\ Estimate the total amount spent on lunches in the school's dining hall per month.
 
 \tcblower
-\textbf{Solution:}\\[0.1em] 
-Assume that:\\[0.1em]
+\textbf{Solution:}
+
+Assume that:
+
 \begin{itemize}[itemsep=0pt]
     \item Half of the pupils in the school buy their lunch from the dining hall.
     \item On average £4 is spent on lunch each day by those pupils.
@@ -117,15 +120,18 @@ Assume that:\\[0.1em]
 
 \end{tcolorbox}
 
-You may have may have estimated a different proportion of pupils that use the dining hall, and a different average spend. It is expected your final answer will vary based on your estimates of the different *variables*.
+You may have estimated a different proportion of pupils that use the dining hall, and a different average spend. This is okay, within reason. It is expected your final answer will vary based on your estimates of the different *variables*.
 
 \begin{tcolorbox}[title=Example 1.1B,colback=RoyalBlue!1!,colframe=NavyBlue]
-\textbf{Problem:}\\[0.1em] 
+\textbf{Problem:}
+
 Estimate the total volume of water that a typical person drinks during their childhood.
 
 \tcblower
-\textbf{Solution:}\\[0.1em]  
-Assume that:\\[0.1em]
+\textbf{Solution:}
+
+Assume that:
+
 \begin{itemize}[itemsep=0pt]
     \item `Childhood' lasts 18 years (from 0 to 18).
     \item On average a child might drink 1 litre of water a day.
@@ -137,7 +143,7 @@ Assume that:\\[0.1em]
 
 \pagebreak
 
-## Modelling Relationships
+## Modelling Relationships using Graphs
 
 We may wish to explore the *relationships* between two or more variables, such as when considering:
 
@@ -158,18 +164,21 @@ We should aim to identify where possible for any relationship:
     \item The \textbf{depdendent} variable - which changes in \textbf{response} to the other.
 \end{itemize}
 
-Initially a consideration of a possible relationship should be *descriptive*, thinking about when the dependent variable might be increasing slowly, increasing more quickly, decreasing, at zero or other specific values. *Graphs* can help:
+Initially a consideration of a possible relationship should be *descriptive*, thinking about when the dependent variable might be increasing slowly, increasing more quickly, decreasing, at zero or other specific values. 
+
+You may have to *sketch a possible graph* of a relationship, or *select from a choice of graphs*, giving an explanation.
 
 \begin{tcolorbox}[title=Example 1.2,colback=RoyalBlue!1!,colframe=NavyBlue]
 
-\textbf{Problem:}\\[0.1em] 
-Bob pours coffee into an empty 200ml capacity coffee cup at a constant rate.\\ The interior of the coffee cup is in the shape of a hemisphere, as shown below.
+\textbf{Problem:}
+
+Bob pours water into an empty cup at a constant rate.\\ The interior of the cup is in the shape of a hemisphere, as shown below.
 \begin{multicols}{2}
 \begin{center}
-\begin{tikzpicture}[scale=1.2]
+\begin{tikzpicture}[scale=1.3]
 
 \tikzset{xshift={mod(1,2)*3cm}, yshift=-floor(1/2)*3cm}
-\colorlet{cup}{MidnightBlue!75!black}
+\colorlet{cup}{Purple!75!black}
 
 % Saucer
 \begin{scope}[shift={(0,-1-1/16)}]
@@ -208,9 +217,9 @@ Bob pours coffee into an empty 200ml capacity coffee cup at a constant rate.\\ T
 % Coffee
 \begin{scope}
 \clip ellipse [x radius=1-1/16, y radius=1/2-1/16];
-\fill [brown!25!black] 
+\fill [MidnightBlue!25!white] 
   (0,-1/4) ellipse [x radius=3/4, y radius=3/8];
-\fill [brown!50!black, path fading=fade out] 
+\fill [MidnightBlue!50!white, path fading=fade out] 
   (0,-1/4) ellipse [x radius=3/4, y radius=3/8];
 \end{scope}
 
@@ -218,7 +227,7 @@ Bob pours coffee into an empty 200ml capacity coffee cup at a constant rate.\\ T
 \end{center}
 
 \begin{center}
-\begin{tikzpicture}[scale=0.8]
+\begin{tikzpicture}[scale=0.9]
 	% Draw a shaded ball, but clip so only the lower half shows.
 	% The arc in the clipping region is the foreground part of the equator
 	\begin{scope}
@@ -242,33 +251,82 @@ Bob pours coffee into an empty 200ml capacity coffee cup at a constant rate.\\ T
 
 \end{multicols}
 
-State which of graphs A, B or C below might be used to model the relationship between the time since Bob began pouring the coffee and the depth of coffee in the cup, explaining your answer.
+State which of graphs A, B or C below might be best suited to model the relationship between the time since Bob began pouring the water and the depth of water in the cup, explaining your answer.
 
 \begin{multicols}{3}
 
 \begin{tikzpicture}
-    \node[above] at (2.5,5) {Graph A};
-    \draw (0,0) grid (5,5);
+    \node[above] at (2,4) {Graph A};
+    \draw[step=0.4cm,black!30] (0,0) grid (4,4);
+    \draw[-stealth] (0,0) -- (0,4.2);
+    \draw[-stealth] (0,0) -- (4.2,0);
+    \node[below] at (2,0) {time (seconds)};
+    \node[above,rotate=90] at (0,2) {depth (cm)};
+    \node[below left] at (0,0) {0};
+    \draw[very thick,MidnightBlue!80!white,domain=0:4,smooth,samples=100] plot (\x,{0.225*(\x)^2});
+    \node[below] at (4,0) {4};
+    \node[left] at (0,3.6) {6};
 \end{tikzpicture}
 
 \begin{tikzpicture}
-    \node[above] at (2.5,5) {Graph B};
-    \draw (0,0) grid (5,5);
+    \node[above] at (2,4) {Graph B};
+    \draw[step=0.4cm,black!30] (0,0) grid (4,4);
+    \draw[-stealth] (0,0) -- (0,4.2);
+    \draw[-stealth] (0,0) -- (4.2,0);
+    \node[below] at (2,0) {time (seconds)};
+    \node[above,rotate=90] at (0,2) {depth (cm)};
+    \node[below left] at (0,0) {0};
+    \draw[very thick,MidnightBlue!80!white,domain=0:4,smooth,samples=100] plot (\x,{0.9*\x});
+    \node[below] at (4,0) {4};
+    \node[left] at (0,3.6) {6};
 \end{tikzpicture}
 
 \begin{tikzpicture}
-    \node[above] at (2.5,5) {Graph C};
-    \draw (0,0) grid (5,5);
+    \node[above] at (2,4) {Graph C};
+    \draw[step=0.4cm,black!30] (0,0) grid (4,4);
+    \draw[-stealth] (0,0) -- (0,4.2);
+    \draw[-stealth] (0,0) -- (4.2,0);
+    \node[below] at (2,0) {time (seconds)};
+    \node[above,rotate=90] at (0,2) {depth (cm)};
+    \node[below left] at (0,0) {0};
+    \draw[very thick,MidnightBlue!80!white,domain=0:4,smooth,samples=100] plot (\x,{1.8*(\x)^0.5});
+    \node[below] at (4,0) {4};
+    \node[left] at (0,3.6) {6};
 \end{tikzpicture}
 
 \end{multicols}
 
 \tcblower
-\textbf{Solution:}\\[0.1em] 
-Graph ? since \textit{blah blah blah}...
+\textbf{Solution:}
+
+Graph C, since the depth will increase more quickly at the start, then slow down towards the end.
 
 \end{tcolorbox}
 
-\pagebreak
+\newpage
 
 ## Linear Relationships
+
+Some types of relationship are commonly encountered, and the rest of this chapter will study these in more detail. One of the simplest relationships between two variables is a *linear relationship*, which on a graph is a *straight line*.
+
+\begin{multicols}{2}
+
+\begin{center}
+    \begin{tikzpicture}
+        \node[text width=8.8cm,below right] at (-1.5,4.5) {A \textit{positive} linear relationship exists between the price of a taxi ride ($P$) and the distance travelled ($D$).};
+        \draw (-1.5,-2.5) rectangle (7.5,4.5);
+    \end{tikzpicture}
+\end{center}
+
+\begin{center}
+    \begin{tikzpicture}
+        \node[text width=8.8cm,below right] at (-1.5,4.5) {A \textit{negative} linear relationship exists between a candle's height ($h$) and the time it spends burning ($t$).};
+        \draw (-1.5,-2.5) rectangle (7.5,4.5);
+    \end{tikzpicture}
+\end{center}
+
+
+\end{multicols}
+
+For an equation of the form $y=a+bx$ describing a linear relationship between $x$ and $y$, the value of $a$ tells us the *starting value* of $y$ (when $x=0$), and the value of $b$ tells us how much $y$ changes for each `step' in the $x$ direction.
+
