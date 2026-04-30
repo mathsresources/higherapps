@@ -1,0 +1,35 @@
+# Answers {-}
+
+\setstretch{1.0}
+\raggedright
+
+### Chapter 1 Answers - Mathematical Modelling {-}
+
+\begingroup
+\footnotesize
+
+[]{#ex11a}
+
+#### [Exercise 1.1](#ex11q) {-}
+
+[]{#ex12a}
+
+#### [Exercise 1.2](#ex12q) {-}
+
+[]{#ex13a}
+
+#### [Exercise 1.3](#ex13q) {-}
+
+[]{#ex14a}
+
+#### [Exercise 1.4](#ex14q) {-}
+
+[]{#ex15a}
+
+#### [Exercise 1.5](#ex15q) {-}
+
+[]{#re1a}
+
+#### [Chapter 1 Review Exercise](#re1q) {-}
+
+\endgroup

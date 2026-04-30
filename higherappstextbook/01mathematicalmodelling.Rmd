@@ -104,7 +104,7 @@ It is important to communicate clearly any **assumptions** made in reaching your
 \begin{tcolorbox}[title=Example 1.1A,colback=RoyalBlue!1!,colframe=NavyBlue]
 \textbf{Problem:}
 
-A secondary school in a city centre in Scotland has approximately 800 pupils.\\ Estimate the total amount spent on lunches in the school's dining hall per month.
+A secondary school in a city centre in Scotland has approximately 800 pupils.\\ Some buy their lunch in the dining hall and some buy their lunch from shops or bring their lunch from home.\\ Estimate the total amount spent on lunches in the school's dining hall per month.
 
 \tcblower
 \textbf{Solution:}
@@ -143,6 +143,12 @@ Assume that:
 
 \pagebreak
 
+[]{#ex11q}
+
+#### [Exercise 1.1](#ex11a) {-}
+
+\newpage
+
 ## Modelling Relationships using Graphs
 
 We may wish to explore the *relationships* between two or more variables, such as when considering:
@@ -164,9 +170,9 @@ We should aim to identify where possible for any relationship:
     \item The \textbf{depdendent} variable - which changes in \textbf{response} to the other.
 \end{itemize}
 
-Initially a consideration of a possible relationship should be *descriptive*, thinking about when the dependent variable might be increasing slowly, increasing more quickly, decreasing, at zero or other specific values. 
+Creating graph of a possible model is a good starting point in understanding any relationship. The *independent* variable should be placed along the $x$-axis and the *response* variable placed on the $y$-axis.
 
-You may have to *sketch a possible graph* of a relationship, or *select from a choice of graphs*, giving an explanation.
+You may have to *sketch* a possible graph of a relationship, or *select from a choice of graphs*, giving an explanation.
 
 \begin{tcolorbox}[title=Example 1.2,colback=RoyalBlue!1!,colframe=NavyBlue]
 
@@ -175,7 +181,7 @@ You may have to *sketch a possible graph* of a relationship, or *select from a c
 Bob pours water into an empty cup at a constant rate.\\ The interior of the cup is in the shape of a hemisphere, as shown below.
 \begin{multicols}{2}
 \begin{center}
-\begin{tikzpicture}[scale=1.3]
+\begin{tikzpicture}[scale=1.1]
 
 \tikzset{xshift={mod(1,2)*3cm}, yshift=-floor(1/2)*3cm}
 \colorlet{cup}{Purple!75!black}
@@ -227,7 +233,7 @@ Bob pours water into an empty cup at a constant rate.\\ The interior of the cup 
 \end{center}
 
 \begin{center}
-\begin{tikzpicture}[scale=0.9]
+\begin{tikzpicture}[scale=0.7]
 	% Draw a shaded ball, but clip so only the lower half shows.
 	% The arc in the clipping region is the foreground part of the equator
 	\begin{scope}
@@ -303,6 +309,12 @@ Graph C, since the depth will increase more quickly at the start, then slow down
 
 \end{tcolorbox}
 
+\pagebreak
+
+[]{#ex12q}
+
+#### [Exercise 1.2](#ex12a) {-}
+
 \newpage
 
 ## Linear Relationships
@@ -330,3 +342,34 @@ Some types of relationship are commonly encountered, and the rest of this chapte
 
 For an equation of the form $y=a+bx$ describing a linear relationship between $x$ and $y$, the value of $a$ tells us the *starting value* of $y$ (when $x=0$), and the value of $b$ tells us how much $y$ changes for each `step' in the $x$ direction.
 
+\newpage
+
+[]{#ex13q}
+
+#### [Exercise 1.3](#ex13a) {-}
+
+\newpage
+
+## Quadratic Relationships
+
+\newpage
+
+[]{#ex14q}
+
+#### [Exercise 1.4](#ex14a) {-}
+
+\newpage
+
+## Exponential Relationships
+
+\newpage
+
+[]{#ex15q}
+
+#### [Exercise 1.5](#ex15a) {-}
+
+\newpage
+
+[]{#re1q}
+
+## [Review Exercise](#re1a) {-}
