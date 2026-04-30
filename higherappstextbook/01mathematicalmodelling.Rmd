@@ -2,6 +2,8 @@
 
 \vspace{-1cm}
 
+\pagenumbering{gobble}
+
 Maths is used to make sense of the world around us, and help us to make decisions, in our personal lives and in the worlds of business, politics, science, and so on. This could involve, for example:
 
 \begin{itemize}[leftmargin=2.3cm]
@@ -101,7 +103,7 @@ These calculations might involve using a mixture of *approximated*, *estimated* 
 
 It is important to communicate clearly any **assumptions** made in reaching your answer, such as the *estimation* above.
 
-\begin{tcolorbox}[title=Example 1.1A,colback=RoyalBlue!1!,colframe=NavyBlue]
+\begin{tcolorbox}[title=Example,colback=RoyalBlue!1!,colframe=NavyBlue]
 \textbf{Problem:}
 
 A secondary school in a city centre in Scotland has approximately 800 pupils.\\ Some buy their lunch in the dining hall and some buy their lunch from shops or bring their lunch from home.\\ Estimate the total amount spent on lunches in the school's dining hall per month.
@@ -122,7 +124,7 @@ Assume that:
 
 You may have estimated a different proportion of pupils that use the dining hall, and a different average spend. This is okay, within reason. It is expected your final answer will vary based on your estimates of the different *variables*.
 
-\begin{tcolorbox}[title=Example 1.1B,colback=RoyalBlue!1!,colframe=NavyBlue]
+\begin{tcolorbox}[title=Example,colback=RoyalBlue!1!,colframe=NavyBlue]
 \textbf{Problem:}
 
 Estimate the total volume of water that a typical person drinks during their childhood.
@@ -170,11 +172,11 @@ We should aim to identify where possible for any relationship:
     \item The \textbf{depdendent} variable - which changes in \textbf{response} to the other.
 \end{itemize}
 
-Creating graph of a possible model is a good starting point in understanding any relationship. The *independent* variable should be placed along the $x$-axis and the *response* variable placed on the $y$-axis.
+Creating graph of a possible model is a good starting point in understanding any relationship. The *independent* variable should be placed along the (horizontal) $x$-axis and the *response* variable placed on the (vertical) $y$-axis.
 
 You may have to *sketch* a possible graph of a relationship, or *select from a choice of graphs*, giving an explanation.
 
-\begin{tcolorbox}[title=Example 1.2,colback=RoyalBlue!1!,colframe=NavyBlue]
+\begin{tcolorbox}[title=Example,colback=RoyalBlue!1!,colframe=NavyBlue]
 
 \textbf{Problem:}
 
@@ -319,30 +321,129 @@ Graph C, since the depth will increase more quickly at the start, then slow down
 
 ## Linear Relationships
 
-Some types of relationship are commonly encountered, and the rest of this chapter will study these in more detail. One of the simplest relationships between two variables is a *linear relationship*, which on a graph is a *straight line*.
+Some types of relationship are commonly encountered, and the rest of this chapter will study these in more detail. One of the simplest relationships between two variables is a *linear relationship*, which on a graph is a **straight line**. A linear relationship is defined by a **constant rate of change**, which can be calculated as the *gradient* of the graph. This tells us the amount of change in the response variable for each positive unit change in the independent variable.
+
+For example, consider the linear relationship between the price of a taxi ride (£$p$) and the distance travelled ($d$ km).
 
 \begin{multicols}{2}
 
 \begin{center}
     \begin{tikzpicture}
-        \node[text width=8.8cm,below right] at (-1.5,4.5) {A \textit{positive} linear relationship exists between the price of a taxi ride ($P$) and the distance travelled ($D$).};
-        \draw (-1.5,-2.5) rectangle (7.5,4.5);
+        \draw[black!20,step=0.25cm] (0,0) grid (5,4);
+        \draw[-stealth] (0,0) -- (5.15,0) node[right] {$d$};
+        \draw[-stealth] (0,0) -- (0,4.15) node[above] {$p$};
+        \node[below] at (2.5,-0.5) {distance (km)};
+        \node[above,rotate=90] at (-0.5,2) {price (£)};
+        \foreach \x in {0,10,20,30,50}{
+        \node[below] at (0.1*\x,0) {\x};
+}
+        \node[RoyalBlue,below] at (4,0) {40};
+        \foreach \x in {0,5,...,50}{
+        \draw (0.1*\x,0) -- (0.1*\x,-0.1);
+}
+        \foreach \y in {0,5,...,40}{
+        \draw (0,0.1*\y) -- (-0.1,0.1*\y);
+}
+        \foreach \y in {0,20,...,80}{
+        \node[left] at (0,0.05*\y) {\y};
+}
+        \draw[very thick,Plum] (0,0.25) -- (5,4) node[above] {$p=\text{5}+\text{1.5}d$};
+        \fill[WildStrawberry] (0,0.25) circle (0.05);
+        \fill[Emerald] (2,1.75) circle (0.05);
+        \fill[Emerald] (3,2.5) circle (0.05);
+        \fill[RoyalBlue] (4,3.25) circle (0.05);
+        \draw[thick,dashed,Emerald] (2,1.75) -- (3,1.75) -- (3,2.5);
+        \node[below,Emerald] at (2.5,1.75) {10 km};
+        \node[right,Emerald] at (3,2.125) {£15};
+        \draw[thick,WildStrawberry,stealth-] (-0.1,0.3) -- (-0.5,0.5) node[left] {£5};
+        \draw[thick,RoyalBlue,stealth-] (-0.1,3.3) -- (-0.5,3.5) node[left] {£65};
+        \draw[thick,dashed,RoyalBlue] (4,0) -- (4,3.25) -- (0,3.25);
     \end{tikzpicture}
 \end{center}
+
+
+The \textcolor{Emerald}{\textbf{rate of change}} is $\frac{\text{15}}{\text{10}}=£\text{1.50}\text{ per km}$, so\\ each extra kilometre increases the price by £1.50.
+
+\vspace{0.5cm}
+
+The graph's \textcolor{WildStrawberry}{\textbf{starting value}}, for a distance of 0 kilometres is £5. (The taxi company's `base charge').
+
+\vspace{0.5cm}
+
+Note that both the \textit{starting value} and the \textit{rate of change} can be observed from the relationship's \textcolor{Plum}{\textbf{equation}}:
 
 \begin{center}
-    \begin{tikzpicture}
-        \node[text width=8.8cm,below right] at (-1.5,4.5) {A \textit{negative} linear relationship exists between a candle's height ($h$) and the time it spends burning ($t$).};
-        \draw (-1.5,-2.5) rectangle (7.5,4.5);
-    \end{tikzpicture}
+\framebox{\textcolor{Plum}{$\textbf{price}=\text{5}+\text{1.5}\times\textbf{distance}$}}
 \end{center}
 
+\vfill\null
 
 \end{multicols}
 
-For an equation of the form $y=a+bx$ describing a linear relationship between $x$ and $y$, the value of $a$ tells us the *starting value* of $y$ (when $x=0$), and the value of $b$ tells us how much $y$ changes for each `step' in the $x$ direction.
+\vspace{-0.8cm}
 
-\newpage
+For any equation of the form $y=a+bx$ describing a linear relationship between $x$ and $y$, the value of $a$ tells us the *starting value* of $y$ (when $x=\text{0}$), and the value of $b$ tells us how much $y$ changes for each `step' in the $x$ direction.
+
+The \textcolor{RoyalBlue}{\textit{dashed line}} shows how the graph can be used to \textcolor{RoyalBlue}{\textbf{predict}} a price of £65 for a distance of 40 kilometres.
+
+The equation can also be used:
+
+\vspace{-0.4cm}
+
+\[\text{price}=\text{5}+\text{1.5}\times\text{40}=65\]
+
+\begin{tcolorbox}[title=Example,colback=RoyalBlue!1!,colframe=NavyBlue]
+\textbf{Problem:}
+
+A candle with a height of 20 centimetres is lit. It loses 4 centimetres of height per hour as it burns.
+
+\begin{enumerate}[(a)]
+    \item Write down an equation connecting the candle's height and its burn time.
+    \item State the units used to measure the rate of change.
+    \item State which is the independent variable and which is the response variable.
+    \item Use the equation to calculate the height of the candle after 90 \textbf{minutes} spent burning.
+    \item Draw a graph to show the relationship.
+\end{enumerate}
+
+\tcblower
+\textbf{Solution:}
+
+\begin{multicols}{2}
+
+\begin{enumerate}[(a)]
+    \item $\text{height}=\text{20}-\text{4}\times\text{time}$
+    \item Centimetres per hour.
+    \item The independent variable is time.\\The response variable is height.
+    \item $\text{height}=\text{20}-\text{4}\times\text{1.5}=\text{14 cm}$
+\end{enumerate}
+
+\vfill\null
+\columnbreak
+
+\begin{tikzpicture}
+    \draw[black!20,step=0.25cm] (0,0) grid (6,2.6);
+    \draw[-stealth] (0,0) -- (6.2,0);
+    \draw[-stealth] (0,0) -- (0,2.7);
+    \foreach \x in {0,1,...,6}{
+    \draw (\x,0) node[below] {\x}-- (\x,-0.1);
+}
+    \node[below] at (3,-0.5) {burn time (hours)};
+    \foreach \y in {0,10,20}{
+    \node[left] at (0,0.1*\y) {\y};
+}
+    \foreach \y in {0,0.5,...,2}{
+    \draw (0,\y) -- (-0.1,\y);
+}
+    \draw[very thick,RoyalBlue] (0,2) -- (5,0);
+    \node[above,rotate=90] at (-0.8,1.2) {height (cm)};
+    \node at (-1.3,2.7) {(e)};
+\end{tikzpicture}
+
+\end{multicols}
+
+\end{tcolorbox}
+
+\pagebreak
 
 []{#ex13q}
 
