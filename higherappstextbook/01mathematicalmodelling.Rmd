@@ -453,6 +453,83 @@ A candle with a height of 20 centimetres is lit. It loses 4 centimetres of heigh
 
 ## Quadratic Relationships
 
+*Quadratic relationships* occur in a wide range of situations, from the shape of satelite dishes to the design of certain kinds of bridges. One of the most common applications of a quadratic equation is when considering any object acting under gravity, such as a ball thrown through the air.
+
+\begin{multicols}{2}
+
+\begin{center}
+    \begin{tikzpicture}
+        \draw[thin,samples=100,smooth,domain=0.5:6.7,dashed] plot (\x,{-0.2*(\x)^2+1.4*(\x)+0.85});
+        \shade [ball color=BrickRed] (6.5,1.5) circle (0.15);
+        \draw[very thick,Fuchsia,samples=100,smooth,domain=1:6,-stealth] plot (\x,{-0.2*(\x)^2+1.4*(\x)+0.85});
+        \draw[very thick,-stealth] (3.5,2) -- (3.5,1) node[below] {gravity};
+    \end{tikzpicture}
+\end{center}
+
+
+The \textcolor{Fuchsia}{\textbf{shape}} of the graph produced is called a \textcolor{Fuchsia}{\textbf{parabola}}.
+
+The 'flipped' version is also a parabola, and the squared term's \textit{sign} tells us if it is a \textcolor{ForestGreen}{\textbf{positive}} or \textcolor{BrickRed}{\textbf{negative}} parabola.
+
+\vspace{-0.5cm}
+
+\begin{center}
+    \begin{tikzpicture}
+        \draw[very thick,ForestGreen,samples=100,smooth,domain=0.5:3] plot (\x,{(\x)^2-3.5*(\x)+3.5625});
+        \draw[very thick,BrickRed,samples=100,smooth,domain=4:6.5] plot (\x,{-(\x)^2+10.5*(\x)-25.5625});
+        \node[left] at (0.5,1) {$h=$\textcolor{ForestGreen}{$t^2$}};
+        \node[right] at (6.5,1) {$h=$\textcolor{BrickRed}{$-t^2$}};
+        \draw[stealth-] (1.75,0.6) -- (1.75,1) node[above] {minimum};
+        \draw[stealth-] (5.25,1.9) -- (5.25,1.5) node[below] {maximum};
+    \end{tikzpicture}
+\end{center}
+
+\end{multicols}
+
+The key feature of any parabola is that it either *falls then rises* or *rises then falls* symmetrically, with a *turning point* in the middle - either a *minimum turning point* or a *maximum turning point* respectively. Studying *quadratic behaviour* in detail form parts of the National 5 Mathematics and Higher Mathematics courses. Key skills required for the Higher Applications course include:
+
+\begin{itemize}[leftmargin=2cm]
+    \item \textbf{Recognising} a quadratic relationship through inspecting a graph.
+    \item Using an \textbf{equation} to find the `output' (response variable) for a given `input' (independent variable). 
+    \item Using a \textbf{graph} to predict the `output' (response variable) for a given `input' (independent variable). 
+\end{itemize}
+
+\begin{tcolorbox}[title=Example,colback=RoyalBlue!1!,colframe=NavyBlue]
+\textbf{Problem:}
+
+The height ($h$ metres) of a ball thrown up at a speed of 15 metres per second from 2 metres above the ground $t$ seconds after it is thrown is given by the equation below. Calculate the height after three seconds.
+
+\vspace{-0.2cm}
+
+\[h=-\text{4.9}t^{\text{2}}+\text{15}t+\text{2}\]
+
+\tcblower
+\textbf{Solution:}
+
+\vspace{-0.2cm}
+
+\[h=-\text{4.9}\times \text{3}^2 + \text{15}\times\text{3}+\text{2}=\text{2.9 metres}\]
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Example,colback=RoyalBlue!1!,colframe=NavyBlue,sidebyside]
+\textbf{Problem:}
+
+The graph
+
+\vspace{-0.2cm}
+
+\[h=-\text{4.9}t^{\text{2}}+\text{15}t+\text{2}\]
+
+\tcblower
+\textbf{Solution:}
+
+\vspace{-0.2cm}
+
+\[h=-\text{4.9}\times \text{3}^2 + \text{15}\times\text{3}+\text{2}=\text{2.9 metres}\]
+
+\end{tcolorbox}
+
 \newpage
 
 []{#ex14q}
