@@ -488,7 +488,7 @@ The 'flipped' version is also a parabola, and the squared term's \textit{sign} t
 
 \vspace{-0.2cm}
 
-The key feature of any parabola is that it either *falls then rises* or *rises then falls* **symmetrically**, with a *turning point* in the middle - either a *minimum turning point* or a *maximum turning point* respectively. Studying *quadratic behaviour* in detail forms parts of the National 5 Mathematics and Higher Mathematics courses. Key skills required for the Higher Applications course include:
+The typical feature of a parabola is that it either *falls then rises* or *rises then falls* **symmetrically**, with a *turning point* in the middle - either a *minimum turning point* or a *maximum turning point* respectively. Studying *quadratic behaviour* in detail forms parts of the National 5 Mathematics and Higher Mathematics courses. Key skills required for the Higher Applications course include:
 
 \begin{itemize}[leftmargin=2cm]
     \item \textbf{Recognising} a quadratic relationship through inspecting a graph.
@@ -517,7 +517,7 @@ The height ($h$ metres) of a ball thrown up at a speed of 15 metres per second f
 \begin{tcolorbox}[title=Example,colback=RoyalBlue!1!,colframe=NavyBlue,sidebyside]
 \textbf{Problem:}
 
-The graph
+The graph below shows the 
 
 \vspace{-0.2cm}
 
