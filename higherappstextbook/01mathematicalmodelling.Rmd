@@ -453,7 +453,7 @@ A candle with a height of 20 centimetres is lit. It loses 4 centimetres of heigh
 
 ## Quadratic Relationships
 
-*Quadratic relationships* occur in a wide range of situations, from the shape of satelite dishes to the design of certain kinds of bridges. One of the most common applications of a quadratic equation is when considering any object acting under gravity, such as a ball thrown through the air.
+*Quadratic relationships* occur in a wide range of situations, from the shape of satellite dishes to the design of certain kinds of bridges. One of the most common applications of a quadratic equation is when considering any object acting under gravity, such as a ball thrown through the air.
 
 \begin{multicols}{2}
 
